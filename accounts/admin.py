@@ -19,7 +19,9 @@ class CustomUserAdmin(UserAdmin):
 
     fieldsets = UserAdmin.fieldsets + ((None,{"fields":("name",)}),)
     add_fieldsets = UserAdmin.add_fieldsets + ((None,{"fields":("name",)}),)
-
+    # add_fieldsets in admin → tells Django how to render and group those fields on the admin page.
+    # specifies what fields to be displayed in the admin panel
+    # Note that in usercreation or useredit
 
 admin.site.register(CustomUser,CustomUserAdmin)
 

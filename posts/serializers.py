@@ -7,7 +7,7 @@ class PostSerializer(serializers.ModelSerializer):
     # When DRF serializes a ForeignKey field, it shows the 
     # primary key (id) of the related object by default. 
     # so to fix this we can set author to :-
-    author = serializers.StringRelatedField()
+  #  author = serializers.StringRelatedField()
     
 #     title = models.CharField(...) → Defines the actual field.
 
