@@ -8,7 +8,7 @@ class CustomUser(AbstractUser):
     name = models.CharField(max_length=100, blank= True,null=True)
     
     def __str__(self):
-        return self.name or self.username
+        return self.username
     # The default __str__ in AbstractUser is:
 
     # def __str__(self):
